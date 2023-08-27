@@ -72,7 +72,7 @@ class Productos extends BaseController
             $data['error'] = 'No se puede eliminar el producto, existe inventario asociado.';
             $data['productos'] = $productoModel->findAll();
 
-            return view('productos/Index', $data);
+            return view('productos/index', $data);
         }
 
         $productoModel->delete($id);
